@@ -6,7 +6,8 @@ apt-get install -y  software-properties-common apparmor-utils apt-transport-http
 echo "------------------ Install docker ------------------"
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 add-apt-repository "deb [arch=arm64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
-apt install -y docker-ce-cli=5:19.03.14~3-0~debian-buster && apt install docker-ce=5:19.03.14~3-0~debian-buster
+apt install -y docker-ce-cli=5:19.03.14~3-0~debian-buster && apt install -y docker-ce=5:19.03.14~3-0~debian-buster
+apt-mark hold docker-ce docker-ce-cli containerd.io
 
 echo "------------------ Remove unused ------------------"
 systemctl disable ModemManager
