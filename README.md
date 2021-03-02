@@ -9,11 +9,8 @@
 
 ## ขั้นตอน
 1) Download Debian 10 for pi4 from link https://raspi.debian.net/tested-images/
-2) Flash image to Memory card
-3) login with root 
+2) Flash image to Memory card by used https://www.balena.io/etcher/
+3) login with root ( no password )
 4) apt update && apt upgrade -y
-5) apt install sudo -y
-6) adduser YOUR_USERNAME
-7) usermod -aG sudo YOUR_USERNAME
-
-
+5) apt install sudo and apt install curl -y
+6) curl -sL "https://raw.githubusercontent.com/tudtude/haDebian/master/prepare.sh" | bash
