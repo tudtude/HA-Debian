@@ -13,4 +13,4 @@ Installation Home Assitstant on Raspberry PI4 os Debain 10 Buster
 3) login with root ( no password )
 4) apt update && apt upgrade -y
 5) apt install sudo and apt install curl -y
-6) curl -sL "https://raw.githubusercontent.com/tudtude/haDebian/master/prepare.sh" | bash
+6) curl -sL "https://raw.githubusercontent.com/tudtude/haDebian/pi4/prepare.sh" | bash
