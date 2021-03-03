@@ -7,6 +7,7 @@ apt-get install -y  software-properties-common apparmor-utils apt-transport-http
 echo "------------------ Install docker ------------------"
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 add-apt-repository "deb [arch=arm64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+apt update
 apt install -y docker-ce-cli=5:19.03.14~3-0~debian-buster && apt install -y docker-ce=5:19.03.14~3-0~debian-buster
 
 echo "------------------ Remove unused ------------------"
