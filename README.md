@@ -13,7 +13,7 @@ Installation Home Assitstant on Raspberry PI4 os Debain 10 Buster
 3) login with root ( no password )
 4) apt update && apt upgrade -y
 5) apt install sudo and apt install curl -y
-6) curl -sL "https://raw.githubusercontent.com/tudtude/haDebian/master/prepare.sh" | bash
+6) curl -sL "https://raw.githubusercontent.com/tudtude/haDebian/pi4/prepare.sh" | bash
 
 ### 2) Install OpenVpn
 1) sudo apt install openvpn
@@ -21,3 +21,9 @@ Installation Home Assitstant on Raspberry PI4 os Debain 10 Buster
 3) sudo cp /home/username/username.ovpn /etc/openvpn/username.conf
 4) sudo systemctl enable openvpn@username
 5) sudo systemctl start openvpn@username
+
+### 3) Install HACS
+1) wget -q -O - https://hacs.xyz/install | bash -
+2) Reboot
+3) Configuration -> Integrations -> Add Integration -> HACS
+4) Following UI instructions
