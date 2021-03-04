@@ -14,3 +14,10 @@ Installation Home Assitstant on Raspberry PI4 os Debain 10 Buster
 4) apt update && apt upgrade -y
 5) apt install sudo and apt install curl -y
 6) curl -sL "https://raw.githubusercontent.com/tudtude/haDebian/master/prepare.sh" | bash
+
+### 2) Install OpenVpn
+1) sudo apt install openvpn
+2) *** Get openvpn file form supplier ***
+3) sudo cp /home/username/username.ovpn /etc/openvpn/username.conf
+4) sudo systemctl enable openvpn@username
+5) sudo systemctl start openvpn@username
